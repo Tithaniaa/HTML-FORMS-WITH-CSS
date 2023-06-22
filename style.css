@@ -1,8 +1,107 @@
 /*style*/
 *{
-    
-    margin: 50%;
-    font: bolder;
-    color: brown;
-    
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    color: white;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cornsilk;
+   
+
+}
+
+.speaker-form-header {
+    text-align: center;
+    background-color: rgb(37, 12, 12);
+    border: 1px solid rgb(209, 34, 34);
+    border-radius: 3px;
+
+    width: 80%;
+    margin: 40px 0;
+    padding: 50px;
+}
+
+.speaker-form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.speaker-form {
+    text-align: center3e;
+    background-color:rgb(37, 12, 12);
+    border: 1px solid rgb(209, 34, 34);
+    border-radius: 3px;
+
+    width: 60%;
+    margin:0 0 40px 0;
+    padding:50px;
+
+}
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row-input[type="text"]{
+background-color: beige;
+border: 1px solid rgb(209, 34, 34);
+border-radius: 3px;
+
+    width: 100%;
+    padding:7px;
+    font-size: 14px;
+}
+
+.form-row-label {
+    margin-bottom: 15px;
+}
+
+.form-row input[type="text"]:invalid,
+.form-row input[type="email"]:invalid{
+    border: 1px solid red;
+    color: red;
+    box-shadow: none;
+ }
+
+@media only screen and (min-width: 700px){
+.speaker-form-header,
+.speaker-form{
+    width: 600px;
+}
+
+.form-row{
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row select, 
+.form-row textarea{
+    width: 200px;
+    height: 26px;
+    margin-top: 2px;
+}
+
+.form-row label{
+    text-align: right;
+    width: 120px;
+    margin-left: 7%;
+    padding-right: 20px;
+}
+
 }
